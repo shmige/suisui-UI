@@ -663,12 +663,8 @@ class MainActivity : ComponentActivity() {
             title = "关于",
             appName = context.getString(R.string.app_name),
             versionName = "v${appVersion.versionName}",
-            links = buildList {
-                add(LinkInfo("Telegram 频道  @xiaosui777", "https://t.me/xiaosui777"))
-                add(LinkInfo("QQ交流群  离情梦  1009608560", "qq:1009608560"))
-                add(LinkInfo("QQ交流群  良田满穗  1125140901", "qq:1125140901"))
-                add(LinkInfo("QQ交流群  万穗  1026840684", "qq:1026840684"))
-            },
+            // 开源版不含作者联系方式与社群入口（原 Telegram 频道 / QQ 群链接已移除）
+            links = emptyList<LinkInfo>(),
         )
         val actions = AboutScreenActions(
             onBack = { navigator.pop() },
@@ -957,11 +953,7 @@ class MainActivity : ComponentActivity() {
     }
 
     internal fun buyKami() {
-        try {
-            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://ka.mini1.vip/s/D503C647")))
-        } catch (_: Exception) {
-            md3Toast(this, "无法打开浏览器，请手动访问 https://ka.mini1.vip/s/D503C647", long = true)
-        }
+        md3Toast(this, "开源版无需卡密", long = true)
     }
 
     /** 更新弹窗 (主页「应用版本」行的更新按钮 / 启动检查提示共用; 与公告弹窗同一套风格) */
@@ -1230,13 +1222,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    /** 专属包下载地址: 云端 Exclusivepackage 优先, 缺键/非法时用内置兜底 */
-    private fun exclusivePkgUrl(): String {
-        val c = CloudConfig.lastConfig["Exclusivepackage"]?.trim().orEmpty()
-        return if (c.startsWith("http://") || c.startsWith("https://")) c
-        else "https://1851476516.share.123pan.cn/123pan/PDRavd-wf4Y3"
-    }
-
     internal fun kaiqiClicked() {
         // 签名校验 (debug 构建跳过, 免重签直装测试)
         val selfSign = if (BuildConfig.DEBUG) "" else selfApkSignSha256()
@@ -1258,14 +1243,8 @@ class MainActivity : ComponentActivity() {
                         positiveText = "前往下载",
                         negativeText = "取消",
                         onPositive = {
-                            // 链接走云端 Exclusivepackage; 云配置还没拉到时先触发一次拉取
-                            if (CloudConfig.lastConfig.isEmpty()) CloudConfig.fetch {}
-                            val url = exclusivePkgUrl()
-                            try {
-                                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-                            } catch (_: Exception) {
-                                md3Toast(this, "无法打开浏览器，请手动访问下载链接", long = true)
-                            }
+                            // 开源版不含专属包分发：云端 Exclusivepackage 与内置外链兜底均已移除
+                            md3Toast(this, "开源版不含专属包下载", long = true)
                         },
                     )
                 )

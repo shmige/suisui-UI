@@ -89,7 +89,7 @@ import kotlinx.coroutines.launch
 import java.lang.ref.WeakReference
 
 // ═══════════════════════════════════════════════
-//  悬浮窗「进入页」(移植自 G:\qing 的 VetileMiniLauncher 启动页):
+//  悬浮窗「进入页」(移植自 上游 VetileMiniLauncher 启动页):
 //   背景图渐显 2s → 右侧平行四边形玻璃带自右划入 1.1s → 文案/按钮淡入 → 「进入首页」
 //   点「进入首页」= 入场的对称反向退场:
 //       ① 玻璃带/文案原路滑回右侧 (620ms) ② 面板在不透明背景图背后淡入 (240ms)

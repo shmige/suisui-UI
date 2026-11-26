@@ -4,7 +4,7 @@ import android.content.Context
 import com.svip.mansui.IPCurbco.TClass.SPUtils
 
 // ═══════════════════════════════════════════════
-//  灵动岛控制 (1:1 移植 G:\bing DynamicIsland 的 native 渲染在 esp/EspRender.cpp):
+//  灵动岛控制 (纯 Java 侧实现, 不依赖 native 渲染):
 //   - 开关: 设置页「灵动岛」→ applySetting (持久化 + native 开关 + 渲染层保活)
 //   - 提示: 开关切换时 → notice(title, on) 推给 native (岛上弹出 Notice 行)
 //   - 渲染层 (OverlayHost) 只在岛开启或 ESP 开启时存在; 岛关闭时提示不生效

@@ -34,11 +34,11 @@ import com.svip.mansui.IPCurbco.TClass.SPUtils
 import kotlin.math.roundToInt
 
 // ═══════════════════════════════════════════════
-//  MD3 组件库 (纯代码, 零外部依赖; 配色/布局参考 G:\jiangxiaosui MD3 主题)
+//  MD3 组件库 (纯代码, 零外部依赖; 配色/布局参考 Material Design 3 规范)
 //  2026-09-01 UI 全面重构
 // ═══════════════════════════════════════════════
 object Md3 {
-    // 与 G:\jiangxiaosui values/colors.xml 一致 (md3_* 角色)
+    // 与 MD3 官方 colors 规范一致 (md3_* 角色)
     val primary = 0xFF415C8E.toInt()              // md3_primary 深蓝
     val onPrimary = 0xFFFFFFFF.toInt()
     val primaryContainer = 0xFFD6E3FF.toInt()     // md3_primary_container
@@ -551,7 +551,7 @@ class Md3Fold(
     }
 }
 
-// 渠道列表 (与 jiangxiaosui GameChannel 一致)
+// 渠道列表 (与上游 GameChannel 定义一致)
 // 渠道 (与梦之喵羽完全对齐: 迷你世界 minitech 系, 顺序 官方服/233/4399/九游/小米/OPPO/vivo)
 val CHANNEL_NAMES = arrayOf(
     "官方服", "233渠道", "4399渠道", "九游渠道", "小米渠道",

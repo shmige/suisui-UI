@@ -21,7 +21,7 @@ import android.widget.TextView
 import java.io.File
 import java.io.FileOutputStream
 
-// 自定义背景裁剪 (移植自 G:\jiangxiaosui CropActivity, 2026-09-01)
+// 自定义背景裁剪 (原创实现, 2026-09-01)
 // 固定比例裁剪窗 (9:16), 支持缩放/拖动, 暗角 + 三分线, 输出 PNG
 // 原版用 androidx appcompat, 本工程无依赖 → 纯 Activity + 自定义顶部栏
 class CropActivity : Activity() {
