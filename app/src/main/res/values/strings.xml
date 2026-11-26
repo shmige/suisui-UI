@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">离情梦</string>
+
+    <!-- 主页 (Material 主页移植: 参考 KernelSU-Style-UI-Kit / G:\qing) -->
+    <string name="home">主页</string>
+    <string name="home_sample_notification">欢迎使用离情梦。请先在下方填写登录凭证并选择渠道版本，然后点「启动数据」。</string>
+    <string name="home_app_version">应用版本</string>
+    <string name="home_example_link_title">启动数据</string>
+    <string name="home_example_link_subtitle">验证登录凭证并打开悬浮窗</string>
+    <string name="home_example_link_url">https://example.com</string>
+
+    <!-- 主页业务文案 -->
+    <string name="home_channel">渠道版本</string>
+    <string name="home_channel_summary">选择游戏渠道包</string>
+    <string name="home_kami">登录凭证</string>
+    <string name="home_kami_hint">请输入登录凭证</string>
+    <string name="home_kami_summary">登录凭证会保存到 /sdcard/离情梦/km</string>
+    <string name="home_start">启动数据</string>
+    <string name="home_unbind">解绑密钥</string>
+    <string name="home_buy">购买登录凭证</string>
+    <string name="home_running_title">工作中</string>
+
+    <!-- 权限 -->
+    <string name="permission_section">悬浮窗权限</string>
+    <string name="permission_ready">已具备悬浮窗权限</string>
+    <string name="permission_missing">缺少悬浮窗权限，无法显示悬浮窗</string>
+    <string name="permission_storage">存储</string>
+    <string name="permission_notification">通知</string>
+    <string name="permission_microphone">麦克风</string>
+    <string name="permission_battery">电池优化</string>
+    <string name="permission_overlay">悬浮窗</string>
+    <string name="permission_granted">已授权</string>
+    <string name="permission_required">必需</string>
+    <string name="permission_optional">可选</string>
+    <string name="permission_action_required">需要授权</string>
+    <string name="permission_grant_action">去授权</string>
+    <string name="permission_status_ready_title">权限已就绪</string>
+    <string name="permission_status_missing_title">权限不足</string>
+
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="confirm">确定</string>
+    <string name="send_log">发送日志</string>
+    <string name="save_log">保存日志</string>
+    <string name="log_saved">日志已保存</string>
+    <string name="processing">处理中…</string>
+    <string name="settings_check_update">检查更新</string>
+    <string name="settings_check_update_summary">开启后检测到新版本会提示，关闭则忽略</string>
+    <string name="settings_ui_mode">界面风格</string>
+    <string name="settings_ui_mode_summary">选择 Material 或 Miuix 风格</string>
+    <string name="settings_theme">主题设置</string>
+    <string name="settings_theme_summary">主题色、深色模式与外观</string>
+    <string name="settings_theme_mode_system">跟随系统</string>
+    <string name="settings_theme_mode_light">浅色</string>
+    <string name="settings_theme_mode_dark">深色</string>
+    <string name="settings_monet">莫奈取色</string>
+    <string name="settings_key_color">主题色</string>
+    <string name="settings_key_color_default">默认</string>
+    <string name="settings_color_style">配色风格</string>
+    <string name="settings_color_spec">颜色规格</string>
+    <string name="settings_page_scale">页面缩放</string>
+    <string name="settings_page_scale_summary">调整界面元素整体大小</string>
+    <string name="settings_enable_blur">启用模糊</string>
+    <string name="settings_enable_blur_summary">界面元素启用背景模糊</string>
+    <string name="settings_floating_bottom_bar">悬浮底栏</string>
+    <string name="settings_floating_bottom_bar_summary">使用液态玻璃悬浮底栏</string>
+    <string name="settings_enable_glass">玻璃效果</string>
+    <string name="settings_enable_glass_summary">底栏启用液态玻璃折射与模糊</string>
+    <string name="settings_enable_predictive_back">预测性返回手势</string>
+    <string name="settings_enable_predictive_back_summary">使用系统预测性返回动画（Android 14+）</string>
+
+    <!-- 设置业务文案 -->
+    <string name="settings_background">背景设置</string>
+    <string name="settings_background_summary">视频 / 图片 / 官方图库背景</string>
+    <string name="settings_float_window">悬浮窗设置</string>
+    <string name="settings_float_window_summary">悬浮球与功能面板外观</string>
+    <string name="settings_island">灵动岛</string>
+    <string name="settings_island_summary">在屏幕顶部显示灵动岛状态</string>
+    <string name="settings_join_us">加入我们</string>
+    <string name="settings_join_us_summary">交流群</string>
+    <string name="settings_env">当前环境</string>
+    <string name="settings_env_reset">重置</string>
+
+    <!-- 卸载 (照搬 KernelSU settings_uninstall 文案结构) -->
+    <string name="settings_uninstall">卸载</string>
+    <string name="settings_uninstall_summary">完全卸载 / 普通卸载</string>
+    <string name="settings_uninstall_full">完全卸载</string>
+    <string name="settings_uninstall_normal">普通卸载</string>
+    <string name="settings_uninstall_full_message">完全并永久卸载</string>
+    <string name="settings_uninstall_normal_message">直接卸载</string>
+    <string name="settings_uninstall_confirm_full">完全并永久卸载本应用。</string>
+    <string name="settings_uninstall_confirm_normal">直接卸载本应用。</string>
+    <string name="settings_uninstall_action">确定卸载</string>
+
+    <!-- 色板 -->
+    <string name="color_blue">蓝色</string>
+    <string name="color_red">红色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_purple">紫色</string>
+    <string name="color_orange">橙色</string>
+    <string name="color_teal">青色</string>
+    <string name="color_pink">粉色</string>
+    <string name="color_brown">棕色</string>
+    <string name="color_deep_purple">深紫</string>
+    <string name="color_indigo">靛蓝</string>
+    <string name="color_cyan">天青</string>
+    <string name="color_yellow">黄色</string>
+    <string name="color_amber">琥珀</string>
+    <string name="color_blue_grey">蓝灰</string>
+    <string name="color_sakura">樱花</string>
+
+    <!-- 关于 -->
+    <string name="about_source_link">离情梦</string>
+</resources>

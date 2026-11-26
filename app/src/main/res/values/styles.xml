@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 2026-09-01 MD3 浅蓝白重构: 无 ActionBar, 背景 #F2F6FB (状态栏同色, 亮色图标在 MainActivity 代码中设置) -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#F2F6FB</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+    </style>
+</resources>

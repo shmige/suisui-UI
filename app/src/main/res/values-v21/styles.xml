@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 2026-09-03: 与 base styles 统一为浅色 NoActionBar (原 DarkActionBar 导致 CropActivity 露出绿色平台 ActionBar) -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">#F2F6FB</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+    </style>
+</resources>
